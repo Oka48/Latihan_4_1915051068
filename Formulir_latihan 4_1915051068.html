@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>JACK PHOTOGRAPHER</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />	
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="Formulir_latihan 4_1915051068.css">
+</head>
+<body>
+	<div class="kotak">		
+		<h1>
+			REGISTRASI TRAINING PHOTOGRAPHY<br/>			
+			JACK PHOTOGRAPHER
+		</h1>	
+		
+		<form class="form">
+			<input type="text" id="nama" placeholder="Tuliskan Nama Anda" name="nama" autocomplete="off">
+			<input type="text" id="alamat" placeholder="Tuliskan Alamat Anda" name="alamat" autocomplete="off">
+			<input type="text" id="umur" placeholder="Tuliskan Umur Anda" name="umur" autocomplete="off">
+			<input type="text" id="alasan" placeholder="Tuliskan Alasan Ingin Menjadi Photographer Professional .." name="alasan" autocomplete="off">
+			<input type="text" id="validasi" placeholder="Apakah Anda Bersedia Mengikuti Training Photography?" name="validasi" autocomplete="off">
+		</form>
+	</div>
+	<script type ="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#nama").keyup(function(){
+				$("#alamat").slideDown();
+			});
+ 
+			$("#alamat").keyup(function(){
+				$("#umur").slideDown();
+			});
+
+			$("#umur").keyup(function(){
+				$("#alasan").slideDown();
+
+			});
+
+			$("#alasan").keyup(function(){
+				$("#validasi").fadeIn();
+			});
+		});
+	</script>
+</body>
+</html>
